@@ -29,11 +29,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "WorkSmart AI Assistant" },
+      { name: "description", content: "AI-powered productivity assistant for emails, meeting notes, planning and research." },
+      { name: "author", content: "WorkSmart" },
+      { property: "og:title", content: "WorkSmart AI Assistant" },
+      { property: "og:description", content: "AI-powered productivity assistant for modern professionals." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -64,6 +64,22 @@ function RootShell({ children }: { children: React.ReactNode }) {
   );
 }
 
+import { AppSidebar, MobileNav } from "@/components/AppSidebar";
+import { Toaster } from "@/components/ui/sonner";
+
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <div className="min-h-screen flex bg-background">
+      <AppSidebar />
+      <div className="flex-1 flex flex-col min-w-0">
+        <MobileNav />
+        <main className="flex-1 overflow-y-auto">
+          <div className="mx-auto w-full max-w-4xl px-5 py-8">
+            <Outlet />
+          </div>
+        </main>
+      </div>
+      <Toaster richColors position="top-right" />
+    </div>
+  );
 }
