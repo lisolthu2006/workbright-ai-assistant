@@ -33,10 +33,14 @@ export const Route = createRootRoute({
       { name: "description", content: "AI-powered productivity assistant for emails, meeting notes, planning and research." },
       { name: "author", content: "WorkSmart" },
       { property: "og:title", content: "WorkSmart AI Assistant" },
-      { property: "og:description", content: "AI-powered productivity assistant for modern professionals." },
+      { property: "og:description", content: "AI-powered productivity assistant for emails, meeting notes, planning and research." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "WorkSmart AI Assistant" },
+      { name: "twitter:description", content: "AI-powered productivity assistant for emails, meeting notes, planning and research." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fd31373c-3c67-4fb4-8ac4-1a399e121d03/id-preview-c956317a--1d7c1650-b69f-4597-a591-e740b1ba7a5d.lovable.app-1778072692284.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fd31373c-3c67-4fb4-8ac4-1a399e121d03/id-preview-c956317a--1d7c1650-b69f-4597-a591-e740b1ba7a5d.lovable.app-1778072692284.png" },
     ],
     links: [
       {
